@@ -1,17 +1,24 @@
 # DeepGTA5
 
+<img src="models/image/fx.png">
+
 ## 使用
 `python drive.py`
+
+打开[远程遥控器](https://www.pixeldesert.com/console/)，控制开始或结束
 
 ## 神经网络架构
 #### 总架构
 <img src="models/image/full.png">
 
-#### 主模型
+#### 主模型(NVDIA)
 <img src="models/image/main_model.png">
 
 #### 路径模型
 <img src="models/image/ladar_model.png">
+
+#### 速度识别
+`KNN`，K-近邻算法
 
 ## 使用的工具
 控制GTA5中的汽车运行：使用[Xbox插件](https://github.com/shauleiz/vXboxInterface)控制车辆速度，以及转弯角度。
@@ -25,3 +32,4 @@
 
 3.最初使用Inception V4，在Tesla K80 GPU训练了5天，然而loss并没有明显下降，故更换到目前的模型。目前使用的模型比Inception浅得多，训练和运行速度也大大提升。
 
+4.速度识别使用K-近邻算法，先使用openCV的findContours方法，将数字切割，然后将数字从右向左排序，传入KNN模型，进行单数字识别，然后再加和在一起。
