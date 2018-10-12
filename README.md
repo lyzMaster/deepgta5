@@ -1,4 +1,7 @@
-# To make a self-driving AI
+# DeepGTA5
+
+## 使用
+`python drive.py`
 
 ## 神经网络架构
 #### 总架构
