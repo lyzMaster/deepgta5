@@ -1,6 +1,10 @@
 # DeepGTA5
+## 效果
 
-<img src="models/image/fx.png">
+<p align="center">
+  <img src="https://j.gifs.com/voPRL5.gif">
+</p>
+
 
 ## 使用
 `python drive.py`
@@ -8,6 +12,7 @@
 打开[远程遥控器](https://www.pixeldesert.com/console/)，控制开始或结束
 
 ## 神经网络架构
+<img src="models/image/fx.png">
 #### 总架构
 <img src="models/image/full.png">
 
