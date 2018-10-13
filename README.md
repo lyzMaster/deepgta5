@@ -4,6 +4,7 @@
 <p align="center">
   <img src="https://j.gifs.com/voPRL5.gif">
 </p>
+[YouTube完整视频](https://www.youtube.com/watch?v=LN93njgiIYA)
 
 
 ## 使用
